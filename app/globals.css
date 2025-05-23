@@ -1,21 +1,93 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200..800&display=swap');
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  margin: 0; 
+  overflow-x: hidden;
+  background-color: black;
+}
+
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
+
+.background-image {
+  object-fit: cover; 
+  z-index: -1; 
+  opacity: 0.7;
+}
+
+
+.title {
+  font-weight: 700; 
+  font-size: 1.5rem; 
+  color: white;
+  padding: 2rem;
+  margin: 0;
+  position: relative; 
+}
+
+.heading {
+  font-weight: 700; 
+  font-size: 4rem; 
+  color: white;
+  padding: 2rem;
+  margin: 0;
+  position: relative; 
+  left: 20%;
+  top: -5%;
+}
+.question{
+  color: white;
+  border: 1px solid #fff;
+  width: 800px;
+  height: 220px;
+  padding-top: 85px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  position: relative;
+  left: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.question h2{
+  position: relative;
+  top: -1.8rem;
+}
+.diff{
+  background-color: #4A5568;
+  padding: 5px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  position: relative;
+  top: -3rem;
+  font-size: 0.9rem;
+}
+.tags{
+  position: relative;
+  top: -4rem;
+  font-size: 1.1rem;
+  color: #A3BFFA;
+}
+.desc{
+  position: relative;
+  top: -5rem;
+  font-size: 1rem;
+}
+.link{
+  position: relative;
+  top: -5rem;
+  background-color: #1A3152;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
 }
