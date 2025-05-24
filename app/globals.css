@@ -1,12 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200..800&display=swap');
 
+body.light {
+  background-color: white;
+  color: #000;
+}
+
+body.light .title,
+body.light .heading,
+body.light .question,
+body.light .question h2,
+body.light .tags,
+body.light .desc {
+  color: #000 !important;
+}
+
+body.light .question {
+  border: 1px solid #000;
+}
+
+body.light .question:hover {
+  border-color: #4A5568;
+  box-shadow: 0 10px 30px rgba(74, 85, 104, 0.3);
+}
+
+body.light .diff {
+  background-color: #E2E8F0;
+  border: solid 1px #000;
+  color: #000;
+}
+
+body.light .link {
+  background-color: #4FC3F7;
+  color: #000;
+}
+
+body.light .link:hover {
+  background-color: #CBD5E0;
+}
+
+body.light .mode{
+  color: #000;
+}
 body {
   font-family: 'Bricolage Grotesque', sans-serif;
   margin: 0; 
   overflow-x: hidden;
   background-color: black;
 }
-
+.mode{
+  position: relative;
+  color: #fff;
+  border: none;
+  background-color: transparent !important;
+  top: -555px;
+  left: 85%;
+}
 .home-container {
   position: relative;
   width: 100%;
@@ -204,8 +252,11 @@ body {
   .title {
     font-size: 1rem;
     padding: 0.5rem;
+    width: max-content;
   }
-  
+  .mode{
+    top: -635px;
+  }
   .heading {
     font-size: 2rem;
     padding: 0.5rem;
@@ -232,7 +283,7 @@ body {
   .desc {
     font-size: 0.9rem;
   }
-  
+
   .link {
     padding: 8px;
     font-size: 0.9rem;
