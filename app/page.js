@@ -4,6 +4,7 @@ import Image from "next/image";
 import DailyQuestion from "./components/question";
 import { useEffect, useState } from "react";
 import { SunMoon } from 'lucide-react';
+import Clock from "./components/clock";
 
 export default function Home() {
   const images = ["/g23.png", "/g22.png"];
@@ -31,7 +32,10 @@ export default function Home() {
         className="background-image"
         priority
       />
-      <h1 className="title">OneDSA</h1>
+      <div className="navbar">
+        <h1 className="title">OneDSA</h1>
+        <h3 className="clock"><Clock /></h3>
+      </div>
       <h1 className="heading">One DSA Question a day</h1>
       <DailyQuestion />
       <button onClick={switchImage} className="mode"><SunMoon/></button>

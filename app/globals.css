@@ -35,10 +35,13 @@ body.light .link {
 }
 
 body.light .link:hover {
-  background-color: #CBD5E0;
+  background-color: #4A78A8;
 }
 
 body.light .mode{
+  color: #000;
+}
+body.light .clock{
   color: #000;
 }
 body {
@@ -46,6 +49,22 @@ body {
   margin: 0; 
   overflow-x: hidden;
   background-color: black;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+}
+.clock{
+  color: #fff;
+  position: relative;
+  left: 350px;
+}
+.cl{
+  background-color: #F28C38;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  width: 300px;
 }
 .mode{
   position: relative;
@@ -164,7 +183,7 @@ body {
 .link {
   position: relative;
   top: -5rem;
-  background-color: #1A3152;
+  background-color: #254776;
   padding: 10px;
   color: #fff;
   border-radius: 10px;
@@ -176,8 +195,6 @@ body {
 
 .link:hover {
   background-color: #4A5568;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1200px) {
