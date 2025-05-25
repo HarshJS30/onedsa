@@ -132,6 +132,7 @@ body {
   padding-right: 20px;
   border-radius: 25px;
   position: relative;
+  top: 0px;
   left: 18%;
   display: flex;
   flex-direction: column;
@@ -270,9 +271,10 @@ body {
     font-size: 1rem;
     padding: 0.5rem;
     width: max-content;
+    transform: translateY(-20px);
   }
   .mode{
-    top: -635px;
+    top: -700px;
   }
   .heading {
     font-size: 2rem;
@@ -283,6 +285,7 @@ body {
     width: 95%;
     padding: 15px;
     border-radius: 15px;
+    margin-top: 200px;
   }
   
   .question h2 {
@@ -305,6 +308,13 @@ body {
     padding: 8px;
     font-size: 0.9rem;
   }
+  .clock{
+    position: relative;
+    left: -3.9rem;
+    top: 40px;
+    height: max-content;
+  }
+  
 }
 
 @media (max-width: 480px) {
